@@ -38,15 +38,15 @@ function Navbar() {
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               <HiLink className='navbar-icon' />
-              BDLINK
+              EDU-LINK
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/aboutus' className='nav-links' onClick={closeMobileMenu}>
-                  About us
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                  Home
                 </Link>
               </li>
               <li className='nav-item'>
@@ -81,6 +81,7 @@ function Navbar() {
                   <Link to='/sign-up' className='btn-link'>
                     <Button buttonStyle='btn--outline'>SIGN UP</Button>
                   </Link>
+                  
                 ) : (
                   <Link to='/sign-up' className='btn-link'>
                     <Button
