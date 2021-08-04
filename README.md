@@ -73,3 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Guide by Eyahya
 yarn add react-router-dom
 yarn add react-icons
+
+deployment:
+1. add   "homepage": "https://eyahyakhan.info/react", in package.json at top just below version.
+
+terminal: yarn run build
+
+2. compress build file
+3. goto live server and upload zip file (compress file)
+4. copy all file from unzip file to location

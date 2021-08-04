@@ -1,14 +1,27 @@
-import React from 'react'
-import './Contact.css'
+import React, { useState } from 'react';
+import './Contact.css';
+import ContactForm from './ContactForm';
+import ContactSuccess from './ContactSuccess';
 
-function Contact() {
-    return (
-        <>
-            <div className='contactPage'>
-                Under preparation <br></br>loading soon .......
-            </div>
-        </>
-    )
-}
 
-export default Contact
+const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+  return (
+    <>
+      <div className='form-container'>
+        <span className='close-btn'>×</span>
+        {!isSubmitted ? (
+          <ContactForm submitForm={submitForm}/>
+        ) : (
+          <ContactSuccess/>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default Contact;
