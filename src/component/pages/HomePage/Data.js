@@ -8,7 +8,7 @@ export const homeObjOne = {
       'Get access to our exclusive offer of React that allows you to learn updated knowledge with unlimited project work. al least 1 projects/week',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-1.jpg',
+    img: 'react/images/svg-1.jpg',
     alt: 'React'
   };
   
@@ -22,7 +22,7 @@ export const homeObjOne = {
       'TypeScript-based free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.',
     buttonLabel: 'Learn More',
     imgStart: '',
-    img: 'images/svg-3.png',
+    img: 'react/images/svg-3.png',
     alt: 'Angular'
   };
   
@@ -36,7 +36,7 @@ export const homeObjOne = {
       "Object-oriented (class-based) and component-oriented programming disciplines. Every lesson has example and completed with a Final project",
     buttonLabel: 'Start Now',
     imgStart: 'start',
-    img: 'images/svg-2.jpg',
+    img: 'react/images/svg-2.jpg',
     alt: 'C#'
   };
   
@@ -50,6 +50,6 @@ export const homeObjOne = {
       'Intermediate level, Total 25 lesson with example, 2 complete projects and MySQL connection',
     buttonLabel: 'Sign Up',
     imgStart: 'start',
-    img: 'images/svg-4.jpg',
+    img: 'react/images/svg-4.jpg',
     alt: 'php'
   };

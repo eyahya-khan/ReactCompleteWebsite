@@ -43,7 +43,7 @@ function MainSection({
                 >
                   {description}
                 </p>
-                <Link to='/sign-up'>
+                <Link to='/signup'>
                   <Button buttonSize='btn--wide' buttonColor='red'>
                     {buttonLabel}
                   </Button>

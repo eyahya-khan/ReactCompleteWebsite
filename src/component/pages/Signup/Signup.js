@@ -1,14 +1,27 @@
-import React from 'react'
-import './Signup.css'
+import React, { useState } from 'react';
+import './Signup.css';
+import SignupForm from './SignupForm';
+import SignupSuccess from './SignupSuccess';
 
-function Signup() {
-    return (
-        <>
-           <div className='servicesPage'>
-                Under preparation <br></br>loading soon .......
-            </div> 
-        </>
-    )
-}
 
-export default Signup
+const Signup = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+  return (
+    <>
+      <div className='form-container'>
+        <span className='close-btn'>×</span>
+        {!isSubmitted ? (
+          <SignupForm submitForm={submitForm} />
+        ) : (
+          <SignupSuccess/>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default Signup;

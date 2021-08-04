@@ -7,6 +7,7 @@ import { HiLink } from 'react-icons/hi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -30,13 +31,13 @@ function Navbar() {
     }
   }, []);
 
-
   return (
     <>
+    
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to='/homes' className='navbar-logo' onClick={closeMobileMenu}>
               <HiLink className='navbar-icon' />
               EDU-LINK
             </Link>
@@ -45,7 +46,7 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/homes' className='nav-links' onClick={closeMobileMenu}>
                   Home
                 </Link>
               </li>
