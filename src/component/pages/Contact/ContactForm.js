@@ -1,9 +1,15 @@
-import React from 'react';
+import React,{useEffect,useRef} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import './Contact.css';
 
 const ContactForm = ({ submitForm }) => {
+  //useRef for input box
+const inputRef =useRef(null)
+useEffect(() => {
+  inputRef.current.focus()
+}, [])
+  //submit form
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
@@ -15,6 +21,7 @@ const ContactForm = ({ submitForm }) => {
         <div className='form-inputs'>
           <label className='form-label'>Your name</label>
           <input
+          ref={inputRef}
             className='form-input'
             type='text'
             name='yourname'

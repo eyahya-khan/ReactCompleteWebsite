@@ -14,6 +14,8 @@ function App() {
     <Router>
       <Navbar/>
       <Switch>
+        {/*call Hom component: must use path='/' and exact*/}
+        <Route path='/react' exact component={Hom} />
         <Route path='/homes' component={Home} />
         <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
@@ -24,5 +26,11 @@ function App() {
     </Router>
   );
 }
-
+//display the home page when start site
+const Hom =()=>(
+<Home/>
+)
+  
 export default App;
+
+
