@@ -3,6 +3,7 @@ import Datafetch from './Datafetch';
 import DatafetchByid from './DatafetchByid';
 import DatafetchClick from './DatafetchClick';
 import './Products.css'
+import { Title} from './StyledComponent';
 
 function Products() {
     useEffect(()=>{

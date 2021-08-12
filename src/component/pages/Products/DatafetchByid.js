@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {Input,Title} from './StyledComponent'
 
 function DatafetchByid() {
   const [post, setPost] = useState({});
@@ -25,8 +26,8 @@ function DatafetchByid() {
   return (
     <>
       {/*<input type="text" value={id} onChange={(e) => setId(e.target.value)} />*/}
-      <input type="text" value={id} onChange={handleChange} />
-      <p>{post.title}</p>
+      <Input type="text" value={id} onChange={handleChange} />
+      <Title>{post.title}</Title>
     </>
   );
 }

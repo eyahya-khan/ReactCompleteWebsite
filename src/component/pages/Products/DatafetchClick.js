@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Title, Input, Button} from './StyledComponent';
 
 function DatafetchClick() {
   const [post, setPost] = useState({});
@@ -26,11 +27,11 @@ function DatafetchClick() {
 
   return (
     <>
-      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-      <button onClick={handleClick}>Click to Fetch</button>
-      <p>Title: {post.name}</p>
-      <p>Email: {post.email}</p>
-      <p>Body: {post.body}</p>
+      <Input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+      <Button onClick={handleClick}>Click to Fetch</Button>
+      <Title>Title: {post.name}</Title>
+      <Title>Email: {post.email}</Title>
+      <Title>Body: {post.body}</Title>
     </>
   );
 }
