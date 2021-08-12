@@ -1,3 +1,15 @@
-.productsPage {
-    margin-left: 50%;
-    }
+.dataInfo{
+    text-align: center;
+    margin-top: 30px;
+}
+.APIparent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+.FDD{
+    margin-top: 80px;
+}

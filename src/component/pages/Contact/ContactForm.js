@@ -7,6 +7,7 @@ const ContactForm = ({ submitForm }) => {
   //useRef for input box
 const inputRef =useRef(null)
 useEffect(() => {
+  document.title='Contact form';
   inputRef.current.focus()
 }, [])
   //submit form

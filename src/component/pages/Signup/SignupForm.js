@@ -7,6 +7,7 @@ const SignupForm = ({ submitForm }) => {
 //useRef for input box
 const inputRef =useRef(null)
   useEffect(() => {
+    document.title='Signup form';
     inputRef.current.focus()
   }, [])
   //submit form
