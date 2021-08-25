@@ -5,7 +5,7 @@ import './Signup.css';
 
 const SignupForm = ({ submitForm }) => {
 //useRef for input box
-const inputRef =useRef(null)
+const inputRef = useRef(null)
   useEffect(() => {
     document.title='Signup form';
     inputRef.current.focus()
@@ -61,12 +61,12 @@ const inputRef =useRef(null)
           <input
             className='form-input'
             type='password'
-            name='password2'
+            name='confirmpassword'
             placeholder='Confirm your password'
-            value={values.password2}
+            value={values.confirmpassword}
             onChange={handleChange}
           />
-          {errors.password2 && <p>{errors.password2}</p>}
+          {errors.confirmpassword && <p>{errors.confirmpassword}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
           Sign up

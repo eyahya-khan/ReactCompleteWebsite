@@ -75,6 +75,13 @@
     margin-bottom: 6px;
     color: #fff;
   }
+
+  /*add * sign*/
+  .form-label:after {
+    content:"*";
+    color: red;
+    font-size: 0.8rem;
+  }
   
   .form-input {
     display: block;

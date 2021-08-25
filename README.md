@@ -1,3 +1,34 @@
+# Implementing ReactJS and NodeJS (ExpressJS) knowledge
+
+I am trying to implement all the basic and advanced knowledge about ReactJS and NodeJS (Express JS) and connecting with database (mySQL).
+1. When signup form & contact form filled up and click on (here 'sign up' & 'Send' respectively)submit then all data are inserted into database.
+2. When login with same email and password then data match with database and login successful.
+
+# ReactJS:
+# Installation:
+yarn add react-router-dom
+yarn add react-icons
+npm install axios
+
+# For deployment:
+1. add   "homepage": "https://eyahyakhan.info/", in package.json at top just below version.
+
+On terminal: run 'yarn run build'
+
+2. compress build file
+3. goto live server and upload zip file (compress file)
+4. copy all file from unzip file to location
+
+# NodeJS:
+1.	Mkdir server
+2.	Cd server
+3.	npm init (end point: app.js/index.js/anyname which will run as main file)
+4.	npm install express body-parser mysql nodemon cors
+5.	Open editor and write code on 'index.js'
+6.	Run code (npm index.js) or npx nodemon
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,14 +101,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-Guide by Eyahya
+
+Installation:
 yarn add react-router-dom
 yarn add react-icons
+npm install axios
 
-deployment:
-1. add   "homepage": "https://eyahyakhan.info/react", in package.json at top just below version.
+For deployment:
+1. add   "homepage": "https://eyahyakhan.info/", in package.json at top just below version.
 
-terminal: yarn run build
+On terminal: run 'yarn run build'
 
 2. compress build file
 3. goto live server and upload zip file (compress file)
