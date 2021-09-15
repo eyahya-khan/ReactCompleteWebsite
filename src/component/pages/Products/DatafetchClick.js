@@ -29,9 +29,9 @@ function DatafetchClick() {
     <>
       <Input type="text" value={id} onChange={(e) => setId(e.target.value)} />
       <Button onClick={handleClick}>Click to Fetch</Button>
-      <Title>Title: {post.name}</Title>
-      <Title>Email: {post.email}</Title>
-      <Title>Body: {post.body}</Title>
+      <Title><strong>Title:</strong> {post.name}</Title>
+      <Title><strong>Email:</strong> {post.email}</Title>
+      <Title><strong>Body:</strong> {post.body}</Title>
     </>
   );
 }

@@ -3,7 +3,7 @@ import Datafetch from './Datafetch';
 import DatafetchByid from './DatafetchByid';
 import DatafetchClick from './DatafetchClick';
 import './Products.css'
-import { Title} from './StyledComponent';
+
 
 function Products() {
     useEffect(()=>{
@@ -22,7 +22,7 @@ function Products() {
             <Datafetch/>
             </div>
             <div className='APIright'>
-            <h1>Fetch data by id</h1>
+            <h1>Fetch posts by id</h1>
             <DatafetchByid/>
             <div className='FDD'>
             <h1>Fetch different data</h1>

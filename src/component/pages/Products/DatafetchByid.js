@@ -27,7 +27,7 @@ function DatafetchByid() {
     <>
       {/*<input type="text" value={id} onChange={(e) => setId(e.target.value)} />*/}
       <Input type="text" value={id} onChange={handleChange} />
-      <Title>{post.title}</Title>
+      <Title>{post.id }. { post.title}</Title>
     </>
   );
 }

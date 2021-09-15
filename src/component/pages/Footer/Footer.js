@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
@@ -10,9 +10,30 @@ import {
   FaLinkedin
 } from 'react-icons/fa';
 import { HiLink } from 'react-icons/hi';
+import Axios from 'axios'
 
 function Footer() {
-  return (
+  const [emaillist,setEmaillist]   = useState([])
+
+const handleEmail = (e)=>{
+  setEmaillist(e.target.value)
+}
+  const handleUnsubscribe = (emaillist) =>{
+            Axios.delete(`http://localhost:3001/api/unsubscribe/${emaillist}`)
+            alert('Do you want to unsubscribe?')
+            alert('Unsubscription successfull!')
+}
+/*
+useEffect(() => {
+  Axios.get('http://localhost:3001/api/get')
+  .then((response)=>{
+  //console.log(response.data)
+  setEmaillist(response.data)
+  })
+}, [])*/
+
+return (
+   
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
@@ -23,14 +44,15 @@ function Footer() {
         </p>
         <div className='input-areas'>
           <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Unsubscribe</Button>
-          </form>
+                <input
+                className='footer-input'
+                name='email'
+                type='email'
+                placeholder='Your Email'
+                onChange = {handleEmail}
+                />
+              <Button buttonStyle='btn--outline' onClick={()=>handleUnsubscribe(emaillist)}>Unsubscribe</Button>
+            </form>      
         </div>
       </section>
       <div className='footer-links'>

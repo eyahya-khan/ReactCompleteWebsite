@@ -1,27 +1,27 @@
-# Implementing ReactJS and NodeJS (ExpressJS) knowledge
+# Full functioning website using ReactJS and NodeJS (ExpressJS) with mySQL
 
-I am trying to implement all the basic and advanced knowledge about ReactJS and NodeJS (Express JS) and connecting with database (mySQL).
-1. When signup form & contact form filled up and click on (here 'sign up' & 'Send' respectively)submit then all data are inserted into database.
-2. When login with same email and password then data match with database and login successful.
+Implementation of basic and advanced knowledge about ReactJS and NodeJS (Express JS) and connecting with database (mySQL).
+1.  ReactJS ( Create app, styled component, hook, router-dom, react-icons, Axios)
+2. Inserted signup data into database (mySQL: create database, table, PK. FK, AI) using ExpressJS
 
 # ReactJS:
 # Installation:
-yarn add react-router-dom
-yarn add react-icons
-npm install axios
+1. yarn add react-router-dom
+2. yarn add react-icons
+3. npm install axios
 
-# For deployment:
+# For Deployment:
 1. add   "homepage": "https://eyahyakhan.info/", in package.json at top just below version.
 
-On terminal: run 'yarn run build'
+On terminal: write 'yarn run build'
 
 2. compress build file
 3. goto live server and upload zip file (compress file)
 4. copy all file from unzip file to location
 
 # NodeJS:
-1.	Mkdir server
-2.	Cd server
+1.	mkdir server
+2.	cd server
 3.	npm init (end point: app.js/index.js/anyname which will run as main file)
 4.	npm install express body-parser mysql nodemon cors
 5.	Open editor and write code on 'index.js'

@@ -14,7 +14,7 @@ export const Title = styled.p`
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 200;
-  text-align: center;
+  text-align: left;
   background-color: #ffffff;
 `;
 

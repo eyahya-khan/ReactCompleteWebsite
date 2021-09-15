@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Axios from 'axios'
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -15,15 +16,19 @@ const useForm = (callback, validate) => {
     setValues({
       ...values,
       [name]: value
-    });
-    
+    }); 
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-
+    
     setErrors(validate(values));
     setIsSubmitting(true);
+    
+    //inserting data into database
+          Axios.post('http://localhost:3001/api/insert',
+        {username:values.username, email:values.email, password:values.password, confirmpassword:values.confirmpassword})
+
   };
 
   useEffect(
@@ -32,7 +37,7 @@ const useForm = (callback, validate) => {
         callback();
       }
     },
-    [errors]
+    [callback,errors,isSubmitting]
   );
 
   return { handleChange, handleSubmit, values, errors };

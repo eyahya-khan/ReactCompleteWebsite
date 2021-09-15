@@ -8,6 +8,7 @@ import Services from './component/pages/Services/Services';
 import Products from './component/pages/Products/Products';
 import Contact from './component/pages/Contact/Contact';
 import Signup from './component/pages/Signup/Signup';
+//import Navbarleftcross from './component/Navbarleftcross';
 
 function App() {
   return (

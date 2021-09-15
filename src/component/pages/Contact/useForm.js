@@ -28,10 +28,10 @@ const useForm = (callback, validate) => {
   useEffect(
     () => {
       if (Object.keys(errors).length === 0 && isSubmitting) {
-        callback();
+      callback();
       }
     },
-    [errors]
+    [callback,errors,isSubmitting]
   );
 
   return { handleChange, handleSubmit, values, errors };

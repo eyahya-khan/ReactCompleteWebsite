@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
+import './Products.css'
 
 function Datafetch() {
     const [posts, setPost] = useState([]);
@@ -17,11 +18,14 @@ function Datafetch() {
     }, []);
     return (
         <div>
-           <ul>
+           <ol>
         {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}>
+            { post.title}
+            <hr></hr>
+          </li>
         ))}
-      </ul> 
+      </ol> 
         </div>
     )
 }
